@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaCheckCircle } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
@@ -12,7 +13,12 @@ export default function Contact() {
 
     return (
         <>
-            <section className="page-hero">
+            <Helmet>
+                <title>Hubungi Kami — Kopikoe Coffee Shop</title>
+                <meta name="description" content="Punya pertanyaan atau ingin melakukan reservasi? Hubungi tim Kopikoe atau kunjungi kedai kopi kami di Jakarta Selatan." />
+            </Helmet>
+
+            <section className="contact-page-hero">
                 <div className="container">
                     <span className="section-label">Hubungi Kami</span>
                     <h1>Kontak</h1>

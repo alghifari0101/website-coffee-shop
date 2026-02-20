@@ -1,10 +1,17 @@
 import { FaMountain, FaMicroscope, FaHandshake, FaRecycle } from 'react-icons/fa';
 import { FaBullseye, FaHeart, FaHouse } from 'react-icons/fa6';
+import { Helmet } from 'react-helmet-async';
 
 export default function About() {
     return (
         <>
-            <section className="page-hero">
+            <Helmet>
+                <title>Tentang Kopikoe — Dedikasi Kami untuk Kopi Indonesia</title>
+                <meta name="description" content="Cerita perjalanan Kopikoe dalam menyeduh kopi premium. Dengan barista berpengalaman dan biji kopi single origin, kami berkomitmen menghadirkan kualitas terbaik." />
+            </Helmet>
+
+            {/* About Hero */}
+            <section className="about-hero">
                 <div className="container">
                     <span className="section-label">Cerita Kami</span>
                     <h1>Tentang Kopikoe</h1>

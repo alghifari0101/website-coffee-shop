@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaCoffee, FaFire, FaUserTie, FaLeaf } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
     const featuredItems = [
@@ -28,10 +29,17 @@ export default function Home() {
 
     return (
         <>
+            <Helmet>
+                <title>Kopikoe — Premium Coffee Experience Jakarta</title>
+                <meta name="description" content="Kopikoe menghadirkan pengalaman kopi premium dengan biji kopi single-origin pilihan terbaik di Jakarta. Nikmati kopi artisan untuk penikmat sejati." />
+            </Helmet>
+
+            <h1 className="sr-only">Kopikoe Premium Coffee Shop Jakarta</h1>
+
             {/* Hero */}
             <section className="hero" id="hero">
                 <div className="hero-bg">
-                    <img src="/hero.gif" alt="Kopikoe coffee experience" />
+                    <img src="/hero.gif" alt="Kopikoe coffee experience" fetchPriority="high" />
                 </div>
                 <div className="hero-overlay"></div>
             </section>

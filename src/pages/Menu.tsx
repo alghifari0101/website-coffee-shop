@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 type Category = 'Semua' | 'Espresso' | 'Latte' | 'Cold Brew' | 'Non-Coffee' | 'Snack';
 
@@ -123,6 +124,11 @@ export default function Menu() {
 
     return (
         <>
+            <Helmet>
+                <title>Menu Kopikoe — Pilihan Kopi Premium & Pastry</title>
+                <meta name="description" content="Eksplorasi berbagai daftar menu kopi spesial di Kopikoe mulai dari Espresso klasik, Cold Brew, Latte favorit, hingga pilihan pastry segar kami." />
+            </Helmet>
+
             <section className="page-hero">
                 <div className="container">
                     <span className="section-label">Kopikoe</span>
